@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   font-size: 62.5%;
   --cor-branca: #ffffff;
@@ -5,11 +11,21 @@
   --cor-preto: #121214;
   --cor-azul: #42d3ff;
   --cor-branco-form: #fafafc;
+  --cor-cinza-escuro: #4e4958;
+  --cor-linha: #e6e6f0;
+  --cor-cinza-escuro-span: #c1bccc;
+}
+
+body,
+input,
+button,
+select,
+textarea {
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
   font-size: 1.6rem;
-  font-family: 'Poppins', sans-serif;
 
   background: var(--cor-cinza);
 }
@@ -44,6 +60,8 @@ header h1 {
   font-size: 3.6rem;
   line-height: 42px;
   color: var(--cor-branca);
+
+  margin-bottom: 24px;
 }
 
 header p {
@@ -74,6 +92,45 @@ fieldset legend {
 
   width: 100%;
 
-  border-bottom: 1px solid #e6e6f0;
+  border-bottom: 1px solid var(--cor-linha);
   padding-bottom: 16px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label {
+  font-size: 1.4rem;
+  line-height: 24px;
+
+  color: var(--cor-cinza-escuro);
+
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+  margin-left: 12px;
+
+  font-size: 12px;
+  line-height: 20px;
+
+  color: var(--cor-cinza-escuro-span);
+}
+
+.input-wrapper input {
+  background: var(--cor-branco-form);
+
+  border: 1px solid var(--cor-linha);
+  border-radius: 8px;
+
+  height: 56px;
+
+  padding: 0 24px;
+
+  font-size: 16px;
+  line-height: 26px;
+
+  color: var(--cor-cinza-escuro-span);
 }
