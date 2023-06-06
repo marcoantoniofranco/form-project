@@ -57,6 +57,23 @@ form {
   margin-top: 38px;
   background: var(--cor-branco-form);
   border-radius: 8px;
-
   min-height: 300px;
+
+  padding: 64px;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset legend {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+
+  width: 100%;
+
+  border-bottom: 1px solid #e6e6f0;
+  padding-bottom: 16px;
 }
