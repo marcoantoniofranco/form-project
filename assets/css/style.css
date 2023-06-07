@@ -13,7 +13,7 @@
   --cor-branco-form: #fafafc;
   --cor-cinza-escuro: #4e4958;
   --cor-linha: #e6e6f0;
-  --cor-cinza-escuro-span: #c1bccc;
+  --cor-cinza-escuro-span: #6c6a71;
 }
 
 body,
@@ -84,6 +84,12 @@ fieldset {
   border: none;
 }
 
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 fieldset legend {
   font-family: 'Archivo', sans-serif;
   font-weight: 600;
@@ -116,10 +122,15 @@ fieldset legend {
   font-size: 12px;
   line-height: 20px;
 
+  color: #8f8d95;
+}
+
+.input-wrapper label span:hover {
   color: var(--cor-cinza-escuro-span);
 }
 
-.input-wrapper input {
+.input-wrapper input,
+.input-wrapper textarea {
   background: var(--cor-branco-form);
 
   border: 1px solid var(--cor-linha);
@@ -133,4 +144,9 @@ fieldset legend {
   line-height: 26px;
 
   color: var(--cor-cinza-escuro-span);
+}
+
+.input-wrapper textarea {
+  padding: 0;
+  height: 168px;
 }
